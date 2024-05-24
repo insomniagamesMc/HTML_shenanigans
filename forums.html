@@ -7,10 +7,35 @@
 </head>
 <body>
     
-    <form>
+    <form action="index.php" method="post" enctype="multipart/form-data">
 
         <label for="username">username</label>
-        <input type="text">
+        <input type="text" id="username" required minlength="10" maxlength="100" placeholder="womp womp"><br>
+
+        <label for="password">password</label>
+        <input type="password" id="password" required minlength="99"><br>
+
+        <label for="email">email</label>
+        <input type="email" id="email"><br>
+
+        <label for="phone">phone number</label>
+        <input type="tel" id="phone" placeholder="888-888-8888" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+
+        <label for="payment">payment</label>
+        <select id="payment">
+            <option value="visa">Visa</option>
+            <option value="visa">Visa</option>
+            <option value="visa">Visa</option>
+        </select><br>
+
+        <label for="comment">comment:</label>
+        <textarea id="comment" rows="4" cols="30"></textarea><br>
+
+        <label for="file">files</label>
+        <input type="file" id="file" accept="image/png, image/jpeg, image/giff">
+
+        <input type="submit">
+        <input type="reset">
 
     </form>
 
